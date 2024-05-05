@@ -1,0 +1,339 @@
+
+
+:root{
+    --maincolor:#e75f78;
+}
+body{
+    font-family: "Nunito Sans", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: "Montserrat", sans-serif;
+}
+/* =========================================== */
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link{
+    color: var(--maincolor);
+    font-weight: bold;
+}
+.nav-link:focus, .nav-link:hover {
+    color: var(--maincolor);
+}
+
+
+
+
+
+
+
+
+
+/* ==================================== */
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) , url(../imgs/header-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+header h1 {
+    font-size: 65px;
+}
+header h1::after{
+    content: "";
+
+    animation: Word infinite 4s alternate;
+}
+
+@keyframes Word{
+    0% {
+        content: "|";
+    }
+    3% {
+        content: "D|";
+    }
+    5% {
+        content: "De|";
+    }
+    7% {
+        content: "Dev|";
+    }
+    10% {
+        content: "Deve|";
+    }
+    13% {
+        content: "Devel|";
+    }
+    15% {
+        content: "Develo|";
+    }
+    17% {
+        content: "Develop|";
+    }
+    20% {
+        content: "Developm|";
+    }
+    24% {
+        content: "Developme|";
+    }
+    25% {
+        content: "Developmen|";
+    }
+    27% {
+        content: "Development|";
+    }
+    30% {
+        content: "Development|";
+    }
+    32% {
+        content: "Developmen|";
+    }
+    35% {
+        content: "Developme|";
+    }
+    37% {
+        content: "Develop|";
+    }
+    40% {
+        content: "Develo|";
+    }
+    42% {
+        content: "Devel|";
+    }
+    45% {
+        content: "Deve|";
+    }
+    47% {
+        content: "Dev|";
+    }
+    50% {
+        content: "De|";
+    }
+    52% {
+        content: "Des|";
+    }
+    55% {
+        content: "Desi|";
+    }
+    57% {
+        content: "Desig|";
+    }
+    60% {
+        content: "Design|";
+    }
+    62% {
+        content: "Designe|";
+    }
+    65% {
+        content: "Designer|";
+    }
+    67% {
+        content: "Designer|";
+    }
+    70% {
+        content: "Designe|";
+    }
+    72% {
+        content: "Design|";
+    }
+    75% {
+        content: "Desig|";
+    }
+    77% {
+        content: "Desi|";
+    }
+    80% {
+        content: "Des|";
+    }
+    82% {
+        content: "De|";
+    }
+    85% {
+        content: "Dev|";
+    }
+    87% {
+        content: "Deve|";
+    }
+    90% {
+        content: "Devel|";
+    }
+    92% {
+        content: "Develo|";
+    }
+    95% {
+        content: "Develop|";
+    }
+    97% {
+        content: "Develope|";
+    }
+    100% {
+        content: "Developer|";
+    }
+}
+
+
+
+header button:hover{
+    background-color: #fff !important;
+    color: black !important;
+    transition: 0.5s;
+}
+.setting{
+    z-index: 111;
+    top: 30%;
+    left: 0;
+    width: 40px;
+    background-color: #333 ;
+    height: 40px;
+    border-radius: 0px 8px 8px 0px;
+}
+.shape{
+    width: 40px;
+    height: 80px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: move 1s infinite;
+    animation-direction: alternate;
+}
+.shape::after{
+    content: "";
+    width: 5px;
+    height: 10px;
+    background-color: #fff;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@keyframes move{
+    0%{
+        top: 85%;
+    }
+    25%{
+        top: 80%;        }
+
+    50%{
+        top: 82%;
+    }    
+    75%{
+        top: 80%;
+    }
+    100%{
+        top: 86%;
+    }
+}
+/* =================================== */
+.col{
+    color: var(--maincolor);
+}
+
+.about i{
+    border: 2px solid #8b8b8b;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.about i:hover{
+    color: var(--maincolor);
+    border-color: var(--maincolor);
+}
+
+
+/* ======================================= */
+.client{
+    background-color: #f1f1f1;
+}
+.italic{
+    font-style: italic;
+}
+
+
+.carousel-indicators [data-bs-target]{
+    height: 7px;
+    background-color: var(--maincolor);
+    border-radius: 40%;
+}
+
+
+/* ============================================ */
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    background-color: var(--maincolor);
+    color: #fff;
+    border-radius: 20px;
+
+
+}
+.nav-tabs .nav-link{
+    border: none;
+    color: #333;
+}
+.portfolio .item{
+    position: relative;
+    overflow: hidden;
+}
+.portfolio .item::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    transition: 0.6s;
+}
+
+
+
+
+.portfolio .item .layer{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: 0.6s; 
+    z-index: 12;  
+}
+.portfolio .item:hover .layer{
+    top: 0;
+}
+.portfolio .item:hover::after{
+    opacity: 0.7;
+}
+.portfolio .item img{
+    transition: 0.5s all;
+}
+.portfolio .item:hover img{
+    transform: scale(1.2);
+}
+/* ======================================= */
+.blog{
+    background-color: #f1f1f1;
+}
+/* ================================= */
+.contact i{
+    font-size: 42px !important;
+}
+ .btn-col{
+    background-color: var(--maincolor);
+ }
+ .btn-col:hover{
+    background-color: var(--maincolor);
+    color: #fff;
+ }
+
+
+ html{
+    scroll-padding-top:75px ;
+ }
+
+ @media (max-width:687px){
+    header h1 {
+        font-size: 36px;
+    }
+ }
